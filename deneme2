@@ -22,12 +22,11 @@ int main()
 			
 			if (quantity>0)
 			{
-					printf("Your total is %.2f TL.", &total);
+					printf("Your total is %.2f TL.", total);
 			}
 			else
 			{
-					printf("ERROR\n");		
-			
+					printf("ERROR\n");				
 			}
 		break;
 		
@@ -39,7 +38,7 @@ int main()
 			
 			if (quantity>0)
 			{
-				printf("Your total is %.3f TL.",&total);
+				printf("Your total is %.2f TL.",total);
 			}
 			else
 			{
@@ -55,15 +54,15 @@ int main()
 			
 			if (quantity>0)
 			{
-				printf("Your total is %.3f TL.",&total);
+				printf("Your total is %.2f TL.",total);
 			}
 			else
 			{
-				printf("Your total is %.3f TL.",&total);
+				printf("ERROR");
 			}
 		break;
 		default:
 			printf("Enter a valid choice: ");
 	}
-	
-}
+return 0;	
+} 
