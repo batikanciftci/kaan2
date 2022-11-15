@@ -1,0 +1,69 @@
+#include <stdio.h>
+#define TEA 2.5
+#define COFFEE 4.0
+#define WATER 1.0
+
+
+int main()
+{
+	int choice, quantity;
+	float total;
+	
+	printf("Enter your choice: \n -Press 1 for tea\n -Press 2 for coffee\n -Press 3 for water\n");
+	scanf("%d",&choice);
+	
+	switch(choice)
+	{
+		case 1:
+			printf("How many tea would you like to order? ");
+			scanf("%d",&quantity);
+			
+			total=TEA*quantity;
+			
+			if (quantity>0)
+			{
+					printf("Your total is %.2f TL.", &total);
+			}
+			else
+			{
+					printf("ERROR\n");		
+			
+			}
+		break;
+		
+		case 2:
+			printf("How many coffee would you like to order? ");
+			scanf("%d",&quantity);
+			
+			total=COFFEE*quantity;
+			
+			if (quantity>0)
+			{
+				printf("Your total is %.3f TL.",&total);
+			}
+			else
+			{
+				printf("ERROR");		
+			}
+		break;
+		
+		case 3:
+			printf("How many water would you like to order? ");
+			scanf("%d",&quantity);
+			
+			total=WATER*quantity;
+			
+			if (quantity>0)
+			{
+				printf("Your total is %.3f TL.",&total);
+			}
+			else
+			{
+				printf("Your total is %.3f TL.",&total);
+			}
+		break;
+		default:
+			printf("Enter a valid choice: ");
+	}
+	
+}
